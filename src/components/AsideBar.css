@@ -1,0 +1,130 @@
+aside {
+    position: sticky;
+    top: 100px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin-bottom: 0.5rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fbf6f6;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 0.5rem;
+    top: 100%;
+    left: 0;
+}
+
+.menu-item:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-arrow {
+    margin-left: auto;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+
+.menu-item:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-link {
+    color: #000;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-link:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-link:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-link:hover {
+    background-color: #b3007a;
+    color: #fff;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.options.planet {
+    color: #007bff;
+    /* Blue color for planets */
+}
+
+.options.spaceship {
+    color: #ffcc00;
+    /* Yellow color for spaceships */
+}
+
+.options.vehicle {
+    color: #00cc66;
+    /* Green color for vehicles */
+}
+
+.options.person {
+    color: #ff6666;
+    /* Red color for people */
+}
+
+.options.film {
+    color: #9933ff;
+    /* Purple color for films */
+}
+
+.options.species {
+    color: #ff9900;
+    /* Orange color for species */
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import AsideBar from './components/AsideBar';
+import Container from './components/Container';
+import HomePage from './components/HomePage';
+import './styles.css';
 
-function App() {
+const App = () => {
+  // Define the filmsData array and handleFilmSelect function
+  const [filmsData, setFilmsData] = useState([]); // You can set the initial state here
+
+  const handleFilmSelect = (film) => {
+    // Handle film selection logic here
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <div className="main-content">
+        <AsideBar films={filmsData} onFilmSelect={handleFilmSelect} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/films" element={<Container />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

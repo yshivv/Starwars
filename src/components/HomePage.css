@@ -1,0 +1,123 @@
+/* HomePage.css */
+.home-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+
+.welcome-box:hover {
+    transform: translateY(-5px);
+}
+
+.welcome-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-title {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.welcome-text {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.get-started-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.get-started-button:hover {
+    background-color: #0056b3;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Welcome box text container */
+.welcome-text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Welcome box image container */
+.welcome-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Welcome box image */
+.welcome-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Get started button container */
+.get-started-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Media Queries for responsiveness */
+/* Mobile devices */
+@media (max-width: 767px) {
+    .welcome-box {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Tablets and smaller desktop screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-box {
+        max-width: 80%;
+    }
+}
+
+/* Large desktop screens (Web-1920) */
+@media (min-width: 1200px) {
+    /* Add specific styles for large desktop screens if needed */
+}
